@@ -1,5 +1,8 @@
 # 从 SVD 到神经网络：用几何直觉理解矩阵、卷积、升维与 ReLU
 
+**作者：Jacky Huo、Jingcheng Liang、ChatGPT**
+
+
 > 这篇文章从 **Singular Value Decomposition（SVD）** 开始，不重新讲向量、矩阵乘法等基础，而是试图回答一个更有价值的问题：  
 > **线性代数里那些“分解、方向、特征值、奇异值”，到底怎样对应到计算机视觉和神经网络内部真正发生的事情？**
 
@@ -1063,4 +1066,3 @@ $$
 ## 参考资料与说明
 
 这篇文章的线性代数核心基于 *Deep Learning*（Goodfellow, Bengio, Courville）Chapter 2 中关于 orthogonal matrices、eigendecomposition、SVD、pseudoinverse 和 PCA 的内容进行整理；神经网络、ReLU piecewise-affine geometry、hidden width、卷积 separability、FFT 与 Hessian/symmetry 部分用于建立机器学习与计算机视觉中的直觉联系。
-
