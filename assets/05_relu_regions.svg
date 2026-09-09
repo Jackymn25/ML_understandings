@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+<rect width="1400" height="720" fill="#fbfbfd"/>
+<style>
+.t{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#182337}
+.h{font-size:39px;font-weight:700}.m{font-size:27px;font-weight:650}.s{font-size:22px}
+.eq{font-family:"Times New Roman",serif;font-size:31px;font-style:italic;fill:#182337}
+.axis{stroke:#5c687a;stroke-width:2.2}.cut{stroke:#8490a2;stroke-width:2.6}
+.note{fill:#eef2f7;stroke:#c7cfda;stroke-width:1.5;rx:12}.box{fill:white;stroke:#637085;stroke-width:2.2;rx:15}
+.arrow{stroke:#4e5a6d;stroke-width:4;fill:none;marker-end:url(#a)}
+</style>
+<defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#4e5a6d"/></marker></defs>
+<text x="700" y="55" text-anchor="middle" class="t h">ReLU：不是“创造新自由度”，而是把输入空间切成多个局部 affine 区域</text>
+
+<rect x="70" y="125" width="530" height="430" class="box"/>
+<text x="335" y="165" text-anchor="middle" class="t m">2D input space：多条 neuron boundary</text>
+<line x1="130" y1="505" x2="540" y2="505" class="axis"/>
+<line x1="180" y1="535" x2="180" y2="205" class="axis"/>
+<line x1="115" y1="470" x2="550" y2="260" class="cut"/>
+<line x1="130" y1="245" x2="535" y2="490" class="cut"/>
+<line x1="260" y1="205" x2="365" y2="535" class="cut"/>
+<line x1="420" y1="200" x2="310" y2="535" class="cut"/>
+<line x1="130" y1="385" x2="540" y2="345" class="cut"/>
+<text x="335" y="585" text-anchor="middle" class="t s">每条线：wᵢᵀx+bᵢ=0；每个区域内 activation pattern 固定</text>
+
+<line x1="610" y1="340" x2="755" y2="340" class="arrow"/>
+<text x="682" y="310" text-anchor="middle" class="eq">ReLU</text>
+
+<rect x="780" y="125" width="550" height="430" class="box"/>
+<text x="1055" y="165" text-anchor="middle" class="t m">同一输入的高维 nonlinear representation</text>
+<path d="M850 460 L930 360 L1010 440 L1080 280 L1160 395 L1250 300" fill="none" stroke="#66748a" stroke-width="7"/>
+<circle cx="850" cy="460" r="7" fill="#66748a"/><circle cx="930" cy="360" r="7" fill="#66748a"/><circle cx="1010" cy="440" r="7" fill="#66748a"/>
+<circle cx="1080" cy="280" r="7" fill="#66748a"/><circle cx="1160" cy="395" r="7" fill="#66748a"/><circle cx="1250" cy="300" r="7" fill="#66748a"/>
+<text x="1055" y="505" text-anchor="middle" class="t s">局部仍由 2 个输入自由度决定，但不同区域落在不同 affine patches</text>
+<text x="1055" y="535" text-anchor="middle" class="t s">整体不再是一个单一 2D affine subspace</text>
+
+<rect x="150" y="615" width="1100" height="70" class="note"/>
+<text x="700" y="657" text-anchor="middle" class="t s">16 个 ReLU neuron 在 2D 中最多可形成 Σₖ₌₀² C(16,k)=137 个线性区域（一般位置下）</text>
+</svg>

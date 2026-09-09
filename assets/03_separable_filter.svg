@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+<rect width="1400" height="720" fill="#fbfbfd"/>
+<style>
+.t{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#192439}
+.h{font-size:40px;font-weight:700}.m{font-size:28px;font-weight:650}.s{font-size:23px}
+.eq{font-family:"Times New Roman",serif;font-size:32px;font-style:italic;fill:#192439}
+.cell{fill:white;stroke:#657186;stroke-width:1.8}
+.box{fill:#fff;stroke:#647085;stroke-width:2.3;rx:16}
+.arrow{stroke:#4e5a6d;stroke-width:4;fill:none;marker-end:url(#a)}
+.note{fill:#eef2f7;stroke:#c7cfda;stroke-width:1.5;rx:12}
+</style>
+<defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#4e5a6d"/></marker></defs>
+<text x="700" y="58" text-anchor="middle" class="t h">计算机视觉中的 rank-1 filter：2D kernel 可以精确拆成两个 1D filter</text>
+
+<!-- matrix -->
+<text x="230" y="125" text-anchor="middle" class="t m">2D kernel F</text>
+<g transform="translate(105,160)">
+<rect x="0" y="0" width="80" height="80" class="cell"/><rect x="80" y="0" width="80" height="80" class="cell"/><rect x="160" y="0" width="80" height="80" class="cell"/>
+<rect x="0" y="80" width="80" height="80" class="cell"/><rect x="80" y="80" width="80" height="80" class="cell"/><rect x="160" y="80" width="80" height="80" class="cell"/>
+<rect x="0" y="160" width="80" height="80" class="cell"/><rect x="80" y="160" width="80" height="80" class="cell"/><rect x="160" y="160" width="80" height="80" class="cell"/>
+<text x="40" y="52" class="t m" text-anchor="middle">1</text><text x="120" y="52" class="t m" text-anchor="middle">0</text><text x="200" y="52" class="t m" text-anchor="middle">−1</text>
+<text x="40" y="132" class="t m" text-anchor="middle">2</text><text x="120" y="132" class="t m" text-anchor="middle">0</text><text x="200" y="132" class="t m" text-anchor="middle">−2</text>
+<text x="40" y="212" class="t m" text-anchor="middle">1</text><text x="120" y="212" class="t m" text-anchor="middle">0</text><text x="200" y="212" class="t m" text-anchor="middle">−1</text>
+</g>
+
+<text x="465" y="285" text-anchor="middle" class="eq">=</text>
+
+<rect x="540" y="165" width="115" height="240" class="box"/>
+<text x="597" y="215" text-anchor="middle" class="t m">1</text>
+<text x="597" y="285" text-anchor="middle" class="t m">2</text>
+<text x="597" y="355" text-anchor="middle" class="t m">1</text>
+
+<text x="705" y="285" text-anchor="middle" class="eq">×</text>
+
+<rect x="770" y="225" width="300" height="120" class="box"/>
+<text x="820" y="295" text-anchor="middle" class="t m">1</text>
+<text x="920" y="295" text-anchor="middle" class="t m">0</text>
+<text x="1020" y="295" text-anchor="middle" class="t m">−1</text>
+
+<text x="805" y="430" text-anchor="middle" class="eq">F = abᵀ = σ₁u₁v₁ᵀ</text>
+<text x="805" y="470" text-anchor="middle" class="t s">只有一个 non-zero singular value ⇔ rank(F)=1 ⇔ separable</text>
+
+<rect x="150" y="535" width="1100" height="110" class="note"/>
+<text x="700" y="578" text-anchor="middle" class="t m">工程意义</text>
+<text x="700" y="615" text-anchor="middle" class="t s">原来的 k×k 2D convolution，可以改成一次 horizontal 1D convolution + 一次 vertical 1D convolution</text>
+</svg>

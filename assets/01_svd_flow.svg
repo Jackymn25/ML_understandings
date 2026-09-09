@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620">
+<rect width="1400" height="620" fill="#fbfbfd"/>
+<style>
+.t{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#172033}
+.h{font-size:40px;font-weight:700}
+.m{font-size:30px;font-weight:600}
+.s{font-size:24px}
+.eq{font-family:"Times New Roman",serif;font-size:34px;font-style:italic;fill:#172033}
+.box{fill:white;stroke:#53627a;stroke-width:2.5;rx:18}
+.arrow{stroke:#49566b;stroke-width:4;fill:none;marker-end:url(#a)}
+.note{fill:#eef2f7;stroke:#c6ceda;stroke-width:1.5;rx:12}
+</style>
+<defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#49566b"/></marker></defs>
+<text x="700" y="60" text-anchor="middle" class="t h">SVD 的几何流程：把复杂线性变换拆成三步</text>
+
+<rect x="55" y="175" width="220" height="170" class="box"/>
+<text x="165" y="235" text-anchor="middle" class="t m">输入向量</text>
+<text x="165" y="290" text-anchor="middle" class="eq">x ∈ Rⁿ</text>
+
+<rect x="330" y="145" width="255" height="230" class="box"/>
+<text x="457" y="205" text-anchor="middle" class="eq">Vᵀ</text>
+<text x="457" y="250" text-anchor="middle" class="t s">换到 right singular</text>
+<text x="457" y="284" text-anchor="middle" class="t s">vectors 的正交坐标系</text>
+<text x="457" y="330" text-anchor="middle" class="t s">得到各方向系数</text>
+
+<rect x="640" y="145" width="255" height="230" class="box"/>
+<text x="767" y="205" text-anchor="middle" class="eq">Σ</text>
+<text x="767" y="250" text-anchor="middle" class="t s">每个方向独立</text>
+<text x="767" y="284" text-anchor="middle" class="t s">stretch / shrink</text>
+<text x="767" y="330" text-anchor="middle" class="t s">也负责 n → m 的维度形状</text>
+
+<rect x="950" y="145" width="255" height="230" class="box"/>
+<text x="1077" y="205" text-anchor="middle" class="eq">U</text>
+<text x="1077" y="250" text-anchor="middle" class="t s">在输出空间的</text>
+<text x="1077" y="284" text-anchor="middle" class="t s">left singular directions</text>
+<text x="1077" y="330" text-anchor="middle" class="t s">重新组合</text>
+
+<rect x="1260" y="175" width="105" height="170" class="box"/>
+<text x="1312" y="235" text-anchor="middle" class="t m">输出</text>
+<text x="1312" y="290" text-anchor="middle" class="eq">y</text>
+
+<line x1="275" y1="260" x2="325" y2="260" class="arrow"/>
+<line x1="585" y1="260" x2="635" y2="260" class="arrow"/>
+<line x1="895" y1="260" x2="945" y2="260" class="arrow"/>
+<line x1="1205" y1="260" x2="1255" y2="260" class="arrow"/>
+
+<rect x="260" y="445" width="880" height="110" class="note"/>
+<text x="700" y="492" text-anchor="middle" class="eq">A = UΣVᵀ, Ax = Σᵢ σᵢ uᵢ(vᵢᵀx)</text>
+<text x="700" y="530" text-anchor="middle" class="t s">每个 singular channel：测输入方向 vᵢ → 乘强度 σᵢ → 沿输出方向 uᵢ 写回</text>
+</svg>
