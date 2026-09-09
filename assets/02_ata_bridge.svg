@@ -3,36 +3,36 @@
 <style>
 .t{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#182337}
 .h{font-size:40px;font-weight:700}.m{font-size:29px;font-weight:650}.s{font-size:24px}
-.eq{font-family:"Times New Roman",serif;font-size:34px;font-style:italic;fill:#182337}
+.eq{font-family:"Cambria Math","STIX Two Math","DejaVu Serif","Times New Roman",serif;font-size:34px;font-style:italic;fill:#182337}
 .box{fill:#fff;stroke:#5c687c;stroke-width:2.4;rx:18}
 .arrow{stroke:#4d596b;stroke-width:4;fill:none;marker-end:url(#a)}
 .hl{fill:#f0f3f8;stroke:#c8d0dc;stroke-width:1.5;rx:12}
 </style>
 <defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#4d596b"/></marker></defs>
-<text x="700" y="60" text-anchor="middle" class="t h">为什么会出现 AᵀA：把“输入 → 输出”拉回输入空间分析</text>
+<text x="700" y="60" text-anchor="middle" class="t h">为什么会出现 A<tspan baseline-shift="super" font-size="70%">T</tspan><tspan baseline-shift="baseline" font-size="100%">A：把“输入 → 输出”拉回输入空间分析</tspan></text>
 
 <rect x="80" y="170" width="250" height="175" class="box"/>
 <text x="205" y="225" text-anchor="middle" class="t m">输入空间</text>
-<text x="205" y="275" text-anchor="middle" class="eq">v ∈ Rⁿ</text>
+<text x="205" y="275" text-anchor="middle" class="eq">v ∈ R<tspan baseline-shift="super" font-size="70%">n</tspan></text>
 <text x="205" y="315" text-anchor="middle" class="t s">某个输入方向</text>
 
 <rect x="485" y="170" width="250" height="175" class="box"/>
 <text x="610" y="225" text-anchor="middle" class="t m">输出空间</text>
-<text x="610" y="275" text-anchor="middle" class="eq">Av ∈ Rᵐ</text>
+<text x="610" y="275" text-anchor="middle" class="eq">Av ∈ R<tspan baseline-shift="super" font-size="70%">m</tspan></text>
 <text x="610" y="315" text-anchor="middle" class="t s">A 作用后的结果</text>
 
 <rect x="890" y="170" width="250" height="175" class="box"/>
 <text x="1015" y="225" text-anchor="middle" class="t m">回到输入空间</text>
-<text x="1015" y="275" text-anchor="middle" class="eq">AᵀAv ∈ Rⁿ</text>
+<text x="1015" y="275" text-anchor="middle" class="eq">A<tspan baseline-shift="super" font-size="70%">T</tspan><tspan baseline-shift="baseline" font-size="100%">Av ∈ R</tspan><tspan baseline-shift="super" font-size="70%">n</tspan></text>
 <text x="1015" y="315" text-anchor="middle" class="t s">可以和 v 比较方向</text>
 
 <line x1="330" y1="255" x2="480" y2="255" class="arrow"/>
 <text x="405" y="230" text-anchor="middle" class="eq">A</text>
 <line x1="735" y1="255" x2="885" y2="255" class="arrow"/>
-<text x="810" y="230" text-anchor="middle" class="eq">Aᵀ</text>
+<text x="810" y="230" text-anchor="middle" class="eq">A<tspan baseline-shift="super" font-size="70%">T</tspan></text>
 
 <rect x="210" y="430" width="980" height="150" class="hl"/>
-<text x="700" y="475" text-anchor="middle" class="eq">AᵀA = VΣᵀΣVᵀ</text>
-<text x="700" y="515" text-anchor="middle" class="t s">AᵀA 的 eigenvectors = right singular vectors vᵢ</text>
-<text x="700" y="550" text-anchor="middle" class="t s">对应 eigenvalue λᵢ = σᵢ²，因此 singular value 是 stretch factor</text>
+<text x="700" y="475" text-anchor="middle" class="eq">A<tspan baseline-shift="super" font-size="70%">T</tspan><tspan baseline-shift="baseline" font-size="100%">A = VΣ</tspan><tspan baseline-shift="super" font-size="70%">T</tspan><tspan baseline-shift="baseline" font-size="100%">ΣV</tspan><tspan baseline-shift="super" font-size="70%">T</tspan></text>
+<text x="700" y="515" text-anchor="middle" class="t s">A<tspan baseline-shift="super" font-size="70%">T</tspan><tspan baseline-shift="baseline" font-size="100%">A 的特征向量 = 右奇异向量 v</tspan><tspan baseline-shift="sub" font-size="70%">i</tspan></text>
+<text x="700" y="550" text-anchor="middle" class="t s">对应特征值 λ<tspan baseline-shift="sub" font-size="70%">i</tspan><tspan baseline-shift="baseline" font-size="100%"> = σ</tspan><tspan baseline-shift="sub" font-size="70%">i</tspan><tspan baseline-shift="super" font-size="70%">2</tspan><tspan baseline-shift="baseline" font-size="100%">，所以奇异值就是伸缩倍数</tspan></text>
 </svg>

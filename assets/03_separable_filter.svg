@@ -3,7 +3,7 @@
 <style>
 .t{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#192439}
 .h{font-size:40px;font-weight:700}.m{font-size:28px;font-weight:650}.s{font-size:23px}
-.eq{font-family:"Times New Roman",serif;font-size:32px;font-style:italic;fill:#192439}
+.eq{font-family:"Cambria Math","STIX Two Math","DejaVu Serif","Times New Roman",serif;font-size:32px;font-style:italic;fill:#192439}
 .cell{fill:white;stroke:#657186;stroke-width:1.8}
 .box{fill:#fff;stroke:#647085;stroke-width:2.3;rx:16}
 .arrow{stroke:#4e5a6d;stroke-width:4;fill:none;marker-end:url(#a)}
@@ -37,7 +37,7 @@
 <text x="920" y="295" text-anchor="middle" class="t m">0</text>
 <text x="1020" y="295" text-anchor="middle" class="t m">−1</text>
 
-<text x="805" y="430" text-anchor="middle" class="eq">F = abᵀ = σ₁u₁v₁ᵀ</text>
+<text x="805" y="430" text-anchor="middle" class="eq">F = ab<tspan baseline-shift="super" font-size="70%">T</tspan><tspan baseline-shift="baseline" font-size="100%"> = σ</tspan><tspan baseline-shift="sub" font-size="70%">1</tspan><tspan baseline-shift="baseline" font-size="100%">u</tspan><tspan baseline-shift="sub" font-size="70%">1</tspan><tspan baseline-shift="baseline" font-size="100%">v</tspan><tspan baseline-shift="sub" font-size="70%">1</tspan><tspan baseline-shift="super" font-size="70%">T</tspan></text>
 <text x="805" y="470" text-anchor="middle" class="t s">只有一个 non-zero singular value ⇔ rank(F)=1 ⇔ separable</text>
 
 <rect x="150" y="535" width="1100" height="110" class="note"/>

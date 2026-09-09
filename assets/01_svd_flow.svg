@@ -5,7 +5,7 @@
 .h{font-size:40px;font-weight:700}
 .m{font-size:30px;font-weight:600}
 .s{font-size:24px}
-.eq{font-family:"Times New Roman",serif;font-size:34px;font-style:italic;fill:#172033}
+.eq{font-family:"Cambria Math","STIX Two Math","DejaVu Serif","Times New Roman",serif;font-size:34px;font-style:italic;fill:#172033}
 .box{fill:white;stroke:#53627a;stroke-width:2.5;rx:18}
 .arrow{stroke:#49566b;stroke-width:4;fill:none;marker-end:url(#a)}
 .note{fill:#eef2f7;stroke:#c6ceda;stroke-width:1.5;rx:12}
@@ -15,10 +15,10 @@
 
 <rect x="55" y="175" width="220" height="170" class="box"/>
 <text x="165" y="235" text-anchor="middle" class="t m">输入向量</text>
-<text x="165" y="290" text-anchor="middle" class="eq">x ∈ Rⁿ</text>
+<text x="165" y="290" text-anchor="middle" class="eq">x ∈ R<tspan baseline-shift="super" font-size="70%">n</tspan></text>
 
 <rect x="330" y="145" width="255" height="230" class="box"/>
-<text x="457" y="205" text-anchor="middle" class="eq">Vᵀ</text>
+<text x="457" y="205" text-anchor="middle" class="eq">V<tspan baseline-shift="super" font-size="70%">T</tspan></text>
 <text x="457" y="250" text-anchor="middle" class="t s">换到 right singular</text>
 <text x="457" y="284" text-anchor="middle" class="t s">vectors 的正交坐标系</text>
 <text x="457" y="330" text-anchor="middle" class="t s">得到各方向系数</text>
@@ -45,6 +45,6 @@
 <line x1="1205" y1="260" x2="1255" y2="260" class="arrow"/>
 
 <rect x="260" y="445" width="880" height="110" class="note"/>
-<text x="700" y="492" text-anchor="middle" class="eq">A = UΣVᵀ, Ax = Σᵢ σᵢ uᵢ(vᵢᵀx)</text>
-<text x="700" y="530" text-anchor="middle" class="t s">每个 singular channel：测输入方向 vᵢ → 乘强度 σᵢ → 沿输出方向 uᵢ 写回</text>
+<text x="700" y="492" text-anchor="middle" class="eq">A = UΣV<tspan baseline-shift="super" font-size="70%">T</tspan><tspan baseline-shift="baseline" font-size="100%">, Ax = Σ</tspan><tspan baseline-shift="sub" font-size="70%">i</tspan><tspan baseline-shift="baseline" font-size="100%"> σ</tspan><tspan baseline-shift="sub" font-size="70%">i</tspan><tspan baseline-shift="baseline" font-size="100%"> u</tspan><tspan baseline-shift="sub" font-size="70%">i</tspan><tspan baseline-shift="baseline" font-size="100%">(v</tspan><tspan baseline-shift="sub" font-size="70%">i</tspan><tspan baseline-shift="baseline" font-size="100%"></tspan><tspan baseline-shift="super" font-size="70%">T</tspan><tspan baseline-shift="baseline" font-size="100%">x)</tspan></text>
+<text x="700" y="530" text-anchor="middle" class="t s">每个奇异通道：测输入方向 v<tspan baseline-shift="sub" font-size="70%">i</tspan><tspan baseline-shift="baseline" font-size="100%"> → 乘强度 σ</tspan><tspan baseline-shift="sub" font-size="70%">i</tspan><tspan baseline-shift="baseline" font-size="100%"> → 沿输出方向 u</tspan><tspan baseline-shift="sub" font-size="70%">i</tspan><tspan baseline-shift="baseline" font-size="100%"> 写回</tspan></text>
 </svg>

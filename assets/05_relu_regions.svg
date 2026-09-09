@@ -3,7 +3,7 @@
 <style>
 .t{font-family:Arial,"Microsoft YaHei",sans-serif;fill:#182337}
 .h{font-size:39px;font-weight:700}.m{font-size:27px;font-weight:650}.s{font-size:22px}
-.eq{font-family:"Times New Roman",serif;font-size:31px;font-style:italic;fill:#182337}
+.eq{font-family:"Cambria Math","STIX Two Math","DejaVu Serif","Times New Roman",serif;font-size:31px;font-style:italic;fill:#182337}
 .axis{stroke:#5c687a;stroke-width:2.2}.cut{stroke:#8490a2;stroke-width:2.6}
 .note{fill:#eef2f7;stroke:#c7cfda;stroke-width:1.5;rx:12}.box{fill:white;stroke:#637085;stroke-width:2.2;rx:15}
 .arrow{stroke:#4e5a6d;stroke-width:4;fill:none;marker-end:url(#a)}
@@ -20,7 +20,7 @@
 <line x1="260" y1="205" x2="365" y2="535" class="cut"/>
 <line x1="420" y1="200" x2="310" y2="535" class="cut"/>
 <line x1="130" y1="385" x2="540" y2="345" class="cut"/>
-<text x="335" y="585" text-anchor="middle" class="t s">每条线：wᵢᵀx+bᵢ=0；每个区域内 activation pattern 固定</text>
+<text x="335" y="585" text-anchor="middle" class="t s">每条线：w<tspan baseline-shift="sub" font-size="70%">i</tspan><tspan baseline-shift="super" font-size="70%">T</tspan><tspan baseline-shift="baseline" font-size="100%">x+b</tspan><tspan baseline-shift="sub" font-size="70%">i</tspan><tspan baseline-shift="baseline" font-size="100%">=0；每个区域内激活模式固定</tspan></text>
 
 <line x1="610" y1="340" x2="755" y2="340" class="arrow"/>
 <text x="682" y="310" text-anchor="middle" class="eq">ReLU</text>
@@ -34,5 +34,5 @@
 <text x="1055" y="535" text-anchor="middle" class="t s">整体不再是一个单一 2D affine subspace</text>
 
 <rect x="150" y="615" width="1100" height="70" class="note"/>
-<text x="700" y="657" text-anchor="middle" class="t s">16 个 ReLU neuron 在 2D 中最多可形成 Σₖ₌₀² C(16,k)=137 个线性区域（一般位置下）</text>
+<text x="700" y="657" text-anchor="middle" class="t s">16 个 ReLU 神经元在二维中最多可形成 1+16+120=137 个线性区域（一般位置下）</text>
 </svg>

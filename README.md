@@ -1,11 +1,9 @@
-# 神经网络的一些理解
+# 从 SVD 到神经网络：一份几何直觉笔记
 
-主文件：
+这是一篇把线性代数和神经网络串起来的学习笔记。起点是 SVD，沿途会聊到低秩近似、可分离卷积、隐藏层升维、ReLU 的分段线性结构，以及 Hessian 的平坦方向。
 
-- `SVD_到神经网络_几何直觉.md`
+## 开始阅读
 
-图片资源位于：
+- [从 SVD 到神经网络：用几何直觉理解矩阵、卷积、升维与 ReLU](SVD_到神经网络_几何直觉.md)
 
-- `assets/`
-
-建议使用支持 LaTeX 数学公式和本地图片的 Markdown 阅读器打开，例如 VS Code + Markdown Preview Enhanced、Typora、Obsidian、MarkText 等。
+文中的示意图保存在 [`assets/`](assets/) 目录。正文采用 GitHub 支持的 LaTeX 数学语法，可直接在仓库页面阅读。
